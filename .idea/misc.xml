@@ -4,14 +4,24 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/drawable/favorite_icon.xml" value="0.2755" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/drawable/favorite_icon1.xml" value="0.2765" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/drawable/favorite_icon2.xml" value="0.2765" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/drawable/filter_icon.xml" value="0.2755" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/drawable/searchview_bg.xml" value="0.2755" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/character_recylerview.xml" value="0.365625" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/episode_child_recyclerview.xml" value="0.27421875" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/episode_recyclerview.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_character_details_bottom_sheet.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_characters.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_episodes.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_favorite.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_item_list_dialog_list_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_item_list_dialog_list_dialog_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_locations.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/fragment_opening.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/location_recyclerview.xml" value="0.365625" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/layout/slider_item.xml" value="0.365625" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/menu/bottom_nav_menu.xml" value="0.365625" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/rickandmorty/app/src/main/res/menu/main_menu.xml" value="0.365625" />
       </map>

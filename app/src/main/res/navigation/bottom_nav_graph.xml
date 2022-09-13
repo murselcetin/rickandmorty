@@ -9,7 +9,11 @@
         android:id="@+id/charactersFragment"
         android:name="com.example.rickandmorty.ui.fragment.CharactersFragment"
         android:label="fragment_characters"
-        tools:layout="@layout/fragment_characters" />
+        tools:layout="@layout/fragment_characters" >
+        <action
+            android:id="@+id/action_charactersFragment_to_characterDetailsBottomSheet"
+            app:destination="@id/characterDetailsBottomSheet" />
+    </fragment>
     <fragment
         android:id="@+id/locationsFragment"
         android:name="com.example.rickandmorty.ui.fragment.LocationsFragment"
@@ -24,5 +28,18 @@
         android:id="@+id/favoriteFragment"
         android:name="com.example.rickandmorty.ui.fragment.FavoriteFragment"
         android:label="fragment_favorite"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_characterDetailsBottomSheet"
+            app:destination="@id/characterDetailsBottomSheet" />
+    </fragment>
+    <dialog
+        android:id="@+id/characterDetailsBottomSheet"
+        android:name="com.example.rickandmorty.ui.fragment.CharacterDetailsBottomSheet"
+        android:label="fragment_character_details_bottom_sheet"
+        tools:layout="@layout/fragment_character_details_bottom_sheet" >
+        <argument
+            android:name="character"
+            app:argType="com.example.rickandmorty.data.entity.CharacterData" />
+    </dialog>
 </navigation>

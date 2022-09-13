@@ -1,24 +1,23 @@
-package com.example.rickandmorty
+package com.example.rickandmorty.data.pagingsource
 
 import android.net.Uri
-import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.rickandmorty.data.entity.CharacterData
+import com.example.rickandmorty.data.entity.GenderAction
+import com.example.rickandmorty.data.entity.StatusAction
 import com.example.rickandmorty.network.RetroService
 import java.lang.Exception
 
-class CharacterPagingSource(val apiService: RetroService): PagingSource<Int, CharacterData>() {
+class GenderFilterPagingSource(val apiService: RetroService, val gender: GenderAction): PagingSource<Int, CharacterData>() {
     override fun getRefreshKey(state: PagingState<Int, CharacterData>): Int? {
-
         return state.anchorPosition
-
     }
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, CharacterData> {
         return try {
             val nextPage: Int = params.key ?: FIRST_PAGE_INDEX
-            val response = apiService.getDataFromAPI(nextPage)
+            val response = apiService.getGenderCharacter(nextPage,gender.gender)
 
             var nextPageNumber: Int? = null
             if(response?.info?.next != null) {
@@ -30,10 +29,8 @@ class CharacterPagingSource(val apiService: RetroService): PagingSource<Int, Cha
             if(response?.info?.prev != null) {
                 val uri = Uri.parse(response?.info?.prev!!)
                 val prevPageQuery = uri.getQueryParameter("page")
-
                 prevPageNumber = prevPageQuery?.toInt()
             }
-
             LoadResult.Page(data = response.results,
                 prevKey = prevPageNumber,
                 nextKey = nextPageNumber)
